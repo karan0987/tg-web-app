@@ -12,13 +12,17 @@
   </head>
   <body>
     <p id="data">
-      <b>Show Alert <button onclick="showAlert('Hello World)">Show Alert</button></b>
+      <b
+        >Show Alert
+        <button onclick="showAlert('Hello World)">Show Alert</button></b
+      >
     </p>
     <script>
-      let tg = window.Telegram.WebApp
-      tg.ready()
-      function showAlert(text){
-        tg.showAlert(text)
+      let tg = window.Telegram.WebApp;
+      console.log(tg)
+      tg.ready();
+      function showAlert(text) {
+        tg.showAlert(text);
       }
     </script>
   </body>
