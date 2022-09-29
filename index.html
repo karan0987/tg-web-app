@@ -8,13 +8,12 @@
     <meta http-equiv="expires" content="0" />
     <meta http-equiv="pragma" content="no-cache" />
     <title>Your Web App</title>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    
+    <script src="https://telegram.org/js/telegram-web-app.js">
+      window.Telegram.WebApp.ready()
+    </script>
   </head>
   <body>
-    <script type="text/javascript" charset="utf-8">
-      Telegram.WebApp.ready()
-    </script>
+    <script type="text/javascript" charset="utf-8"></script>
     <p id="data">
       <b
         >Show Alert
@@ -22,9 +21,7 @@
       >
     </p>
     <script>
-      let tg = window
-      console.log(tg)
-      tg.ready();
+      let tg = window.Telegram.WebApp;
       function showAlert(text) {
         tg.showAlert(text);
       }
