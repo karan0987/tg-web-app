@@ -11,15 +11,33 @@
     <script src="https://telegram.org/js/telegram-web-app.js">
       window.Telegram.WebApp.ready()
     </script>
+    <style type="text/css" media="all">
+      .form {
+        text-align: center;
+      }
+      .button {
+        width: 30%;
+        height: 40px;
+        background-color: skyblue;
+      }
+    </style>
   </head>
   <body>
     <script type="text/javascript" charset="utf-8"></script>
-    <p id="data">
-      <b
-        >
-        <button onclick="showAlert('Hello World')">Show Alert</button></b
-      >
-    </p>
+    <form class="form" action="/formdata" method="get" accept-charset="utf-8">
+      <label for="email"><b>Email:</b></label>
+      <input type="email" name="email" id="email" value="" required=""/>
+      <br /> <br />
+      <label for="name"><b>Name:</b></label>
+      <input type="text" name="name" id="name" value="" required=""/>
+      <br /><br />
+      <label for="Number"><b>Number:</b></label>
+      <input type="number" name="Number" id="Number" value="" required=""/>
+      <br /><br />
+      <button class="button" type="submit">
+        <b>Submit</b> 
+      </button>
+    </form>
     <script>
       let tg = window.Telegram.WebApp;
       function showAlert(text) {
