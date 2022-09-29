@@ -8,11 +8,11 @@
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-  <p>Hello , World</p>
+  <p id="data"></p>
   <script>
     let tg = window.Telegram.WebApp
     if(tg){
-      alert('Its a tg web app....')
+      document.getElementById('data').innerHTML = JSON.stringify(tg)
     }
   </script>
 </body>
