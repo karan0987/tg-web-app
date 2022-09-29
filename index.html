@@ -13,13 +13,7 @@
   <body>
     <p id="data"></p>
     <script>
-      let Telegram = window.Telegram.WebApp
-      Telegram.WebApp.ready()
-      function setThemeClass() {
-            document.documentElement.className = Telegram.WebApp.colorScheme;
-        }
-        Telegram.WebApp.onEvent('themeChanged', setThemeClass);
-        setThemeClass();
+      let tg = window.Telegram.WebApp
 
     </script>
   </body>
