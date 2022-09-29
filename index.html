@@ -16,13 +16,14 @@
     <script type="text/javascript" charset="utf-8"></script>
     <p id="data">
       <b
-        >Show Alert
-        <button onclick="showAlert('Hello World)">Show Alert</button></b
+        >
+        <button onclick="showAlert('Hello World')">Show Alert</button></b
       >
     </p>
     <script>
       let tg = window.Telegram.WebApp;
       function showAlert(text) {
+        console.log(tg)
         tg.showAlert(text);
       }
     </script>
