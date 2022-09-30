@@ -1,7 +1,7 @@
 const {Telegraf} = require('telegraf')
 const express = require("express");
 var app = express()
-app.listen(3000)
+app.listen()
 var router = express.Router()
 app.use('/',router)
 var bot = new Telegraf('5783478127:AAG3HrfXaxI2ZFDZBAixnSku1N7Nnr1BYpY')
