@@ -8,7 +8,7 @@ bot.command('start',(ctx)=>{
     reply_markup : {
       inline_keyboard : [
         [{text:'Open Web App',web_app:{
-          url : 'https://karan786-dev.github.io/tg-web-app/'
+          url : 'https://tg-web-app-production.up.railway.app/'
         }}]
         ]
     }
