@@ -40,14 +40,10 @@
       </button>
     </form>
     <script>
-            let tg = window.Telegram.WebApp;
-            let data_check_string;
-      secret_key = HMAC_SHA256('5783478127:AAG3HrfXaxI2ZFDZBAixnSku1N7Nnr1BYpY', "WebAppData")
-      if (hex(HMAC_SHA256(data_check_string, secret_key)) == hash) {
-        function showAlert(text) {
-              console.log(tg)
-              tg.showAlert(text);
-            }
+      let tg = window.Telegram.WebApp;
+      function showAlert(text) {
+        console.log(tg);
+        tg.showAlert(text);
       }
     </script>
   </body>
