@@ -17,7 +17,7 @@ bot.command('start',(ctx)=>{
     reply_markup : {
       inline_keyboard : [
         [{text:'Open Web App',web_app:{
-          url : 'https://tg-web-app-production.up.railway.app/'
+          url : 'https://tg-web-app-production.up.railway.app:3000'
         }}]
         ]
     }
