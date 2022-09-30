@@ -1,7 +1,16 @@
 const {Telegraf} = require('telegraf')
+const express = require("express");
+var app = express()
+app.launch()
+var router = express.Router()
+app.use('/',router)
 var bot = new Telegraf('5783478127:AAG3HrfXaxI2ZFDZBAixnSku1N7Nnr1BYpY')
 bot.launch()
 console.log('Bot Launched.....')
+
+router.get("/",(req,res)=>{
+  res.send('Hello,World')
+})
 
 bot.command('start',(ctx)=>{
   ctx.reply('Your Web App 👇👇',{
